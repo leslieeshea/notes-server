@@ -1,5 +1,10 @@
 language: node_js
-node_js: 
-  - "node"
+node_js:
+- node
 services: mongodb
 env: MONGODB_URI=mongodb://localhost:27017/notes-server-fsjs19
+deploy:
+  provider: heroku
+  app: notes-server-fsjs19
+  api_key:
+    secure: ebOZeguG4uHnkuukdek6KtR5yF09+jv8Eu/44ILM4kZar5+ZYI43k9NTv0H3o8iV0Kz8QK0sS52y0u36s90q5BUftWwzbf1Iab7FPSdn1ZsNSqY7NjPgUlhTZHTtMaGtMfd41I76a10L/txlsA8ViUKn/mcRROiKABU11lsfYMaYXB4w/91nu4aFBXFNTVq5g+obLsj/zfB76ZP9y9O3Lm7iCZUN+OJy+AQBOBQIqaGGF4YlR/q0Y8M38Wzrh9ZEjjJFTFhvF9ftNlnN1Im62x5SZ01WyFCPLv4moW6+Mgz9voA4PsUJHotkEORMVBSp8IISEY4/WtZ3Cw02LfIPt7VpQ2B+qCMuoBvUcnCm1n2IVPsaby+9iO2QDGzXhbM2Ha82P7KemmBGyu0+WHCBvULc4Vb5hO6DmaJCkD0ksYs1vLRhJXXHzj/K9DFRBsdKW0t/483D/S0jqLk9sc5E0JayP2dAUtbctN/lMhy7joLuQb4QuKSD7bS3O1BzNmKOoWDZ7xdNTuSQFeCV04dCkB+8LEet3tszqRQ6351pOx14iqkKZMNsb6y727hUjN0TU6KtQE6bznbykk7f0bb3i9wLt/HOJrSFwSXrVSWrvPgy7VW2ifNd9IKfFTqxU8pj3pl5Xa2aoSZIllbx9SFrZtqqk6LM3hhbs2OUMYlg+Ks=
