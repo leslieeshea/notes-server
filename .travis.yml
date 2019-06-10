@@ -1,7 +1,7 @@
 language: node_js
 node_js: node
 services: mongodb
-env: MONGODB_URI=mongodb://localhost:27017/notes-server-fsjs19
+env: MONGODB_URI=mongodb://localhost:27017/notes
 deploy:
   provider: heroku
   app: notes-server-fsjs19
